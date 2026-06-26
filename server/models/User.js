@@ -1,5 +1,6 @@
-import mongoose from "mongoose";
-const userSchema=new mongoose.Schema(
+import mongoose from "mongoose";//it helps to define schema 
+// and interact with mongodb
+const userSchema=new mongoose.Schema(//here, creating a schema
     {
         name:{
             type:String,
@@ -15,10 +16,14 @@ const userSchema=new mongoose.Schema(
             required:true,
         },
     },
-    {
+    {//mongodb automatically creates createAt, updateAt when 
+        // we pass timestamps as second argument
         timestamps:true,
     }
 );
 
+//this tells mongodb to create collection called users using 
+// this schema. mongoose automatically converts User to users
+//inside mongodb
 const User=mongoose.model("User",userSchema);
-export default User;
+export default User;//by exporting, other files can use it
