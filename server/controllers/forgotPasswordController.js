@@ -6,7 +6,6 @@ export const forgotPassword = async (req, res) => {
     console.log("Forgot password controller called");
     try {
         const { email } = req.body;
-        console.log("Email:", email);
         const user = await User.findOne({ email });
         if (!user) {
             return res.status(404).json({
@@ -18,7 +17,6 @@ export const forgotPassword = async (req, res) => {
         ).toString();
         user.otp = otp;
         user.otpExpiry = Date.now() + 5 * 60 * 1000;
-        console.log("Email:", email);
         await user.save();
         await sendEmail(
             user.email,
