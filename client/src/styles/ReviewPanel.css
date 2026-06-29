@@ -1,0 +1,45 @@
+.review-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.review-title{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.copy-btn{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin-top: -10px;
+}
+
+.empty-review{
+    display:flex;
+    margin-top: -80px;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    height:100%;
+}
+
+.empty-review-icon{
+    font-size:60px;
+    color:#60a5fa;
+    margin-bottom:5px;
+}
+
+.copy-btn{
+    padding:8px 14px;
+    font-size:14px;
+    border-radius:8px;
+}
+
+.user-info svg{
+    color:#60a5fa;
+}

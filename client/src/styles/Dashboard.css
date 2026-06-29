@@ -1,0 +1,60 @@
+.dashboard {
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #0f172a;
+    color: white;
+}
+
+
+.editor-review-container {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.editor-panel {
+    flex: 1;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+}
+
+.language-select {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.review-panel {
+    flex: 1;
+    height: 650px;
+    overflow-y: auto;
+    background-color: #1e293b;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #334155;
+    box-sizing: border-box;
+}
+
+.review-panel h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.review-panel pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+
+
+.empty-review {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #94a3b8;
+    text-align: center;
+    font-size: 18px;
+}

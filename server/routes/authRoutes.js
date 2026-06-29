@@ -1,6 +1,6 @@
 import express from "express";
-import { loginUser, registerUser } from "../controllers/authController.js";
-
+import { getProfile, loginUser, registerUser } from "../controllers/authController.js";
+import { protect } from "../middleware/authMiddleware.js";
 const router=express.Router();//create a router
 
 router.post("/register",registerUser);//creates a POST API 
@@ -9,4 +9,6 @@ router.post("/register",registerUser);//creates a POST API
 // controller function to handle the request
 
 router.post("/login",loginUser);
+router.get("/profile",protect,getProfile)
+
 export default router;

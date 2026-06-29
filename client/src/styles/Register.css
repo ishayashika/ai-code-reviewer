@@ -1,0 +1,33 @@
+.password-rules{
+    margin-top:10px;
+    text-align:left;
+    font-size:14px;
+}
+
+.password-rules p{
+    margin:4px 0;
+}
+
+.valid{
+    color:#22c55e;
+    font-weight:600;
+}
+
+.invalid{
+    color:#ef4444;
+    font-weight:600;
+}
+
+.password-invalid {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #ef4444;
+    transition: color 0.2s ease;
+}
+
+.password-valid {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #22c55e;
+    transition: color 0.2s ease;
+}

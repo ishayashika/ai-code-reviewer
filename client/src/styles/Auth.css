@@ -1,0 +1,171 @@
+.auth-container {
+    min-height: 100vh;
+    background: #0f172a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-card {
+    width: 400px;
+    background: #1e293b;
+    padding: 20px 35px 35px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.auth-title {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.auth-subtitle {
+    margin: 0 0 20px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #475569;
+    background: #0f172a;
+    color: white;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.auth-form input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.auth-form > button {
+    padding: 10px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
+.auth-form > button:hover {
+    background: #1d4ed8;
+}
+
+.auth-footer {
+    margin-top: 10px;
+    text-align: center;
+    color: #cbd5e1;
+}
+
+.auth-footer a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 45px;
+    box-sizing: border-box;
+}
+
+.toggle-password {
+    all: unset;
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #94a3b8;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-password:hover {
+    color: white;
+}
+
+.password-valid,
+.password-invalid {
+    margin-top: 6px;
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: left;
+}
+
+
+.password-valid {
+    color: #22c55e;
+}
+
+.password-invalid {
+    color: #ef4444;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.forgot-password a {
+    color: #60a5fa;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.field-group {
+    width: 100%;
+    margin-bottom: -5px;
+}
+
+.field-group label {
+    display: block;
+    margin-bottom: 2px;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 600;
+    color: #e2e8f0;
+}
+
+.required {
+    color: #ef4444;
+}
+
+.register-btn{
+    margin-top: 12px;
+    padding: 10px;
+}
+
+.login-btn{
+    margin-top: -10px;
+}
+

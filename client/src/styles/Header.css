@@ -1,0 +1,110 @@
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.header-container{
+    margin-bottom:10px;
+
+}
+
+.user-info h2{
+    color:white;
+    margin:0;
+    font-size:25px;
+}
+
+.user-info p{
+    color:#cbd5e1;
+    margin-top:8px;
+    font-size:15px;
+}
+
+.title-section{
+    text-align:center;
+    margin-top:8px;
+}
+
+.welcome-title{
+    display:flex;
+    align-items:center;
+    gap:5px;
+}
+
+.welcome-icon{
+    font-size:28px;
+    position:relative;
+    top:5px; 
+}
+
+.dashboard-title{
+    font-size:48px;
+    font-weight:700;
+    color:white;
+    margin:0;
+}
+
+.dashboard-subtitle{
+    color:#cbd5e1;
+    font-size:16px;
+    margin-top:10px;
+}
+
+.button-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.button-group button{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:12px 22px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:15px;
+    transition:.25s;
+}
+
+.review-btn{
+    background: transparent;
+    border: 1px solid #2563eb;
+    color: #60a5fa;
+}
+
+.review-btn:hover{
+    background: #2563eb;
+    color: white;
+}
+
+.history-btn{
+    background: transparent;
+    border: 1px solid #64748b;
+    color: #cbd5e1;
+}
+
+.history-btn:hover{
+    background: #475569;
+    color: white;
+}
+
+.logout-btn{
+    background: transparent;
+    border: 1px solid #ef4444;
+    color: #ef4444;
+}
+
+.logout-btn:hover{
+    background: #ef4444;
+    color: white;
+}
+
+.button-group button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}

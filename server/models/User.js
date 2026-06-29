@@ -15,6 +15,21 @@ const userSchema=new mongoose.Schema(//here, creating a schema
             type:String,
             required:true,
         },
+        otp: {
+            type: String,
+        },
+
+        otpExpiry: {
+            type: Date,
+        },
+        isOtpVerified: {
+            type: Boolean,
+            default: false,
+        },
+        passwordUpdated: {
+            type: Boolean,
+            default: false,
+        },
     },
     {//mongodb automatically creates createAt, updateAt when 
         // we pass timestamps as second argument
