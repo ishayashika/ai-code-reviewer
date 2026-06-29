@@ -1,7 +1,6 @@
 import dotenv from "dotenv";
 dotenv.config();
 import { GoogleGenAI } from "@google/genai";
-console.log("API KEY:", process.env.GEMINI_API_KEY);
 
 export const reviewAI = async (code,language) => {
     const ai = new GoogleGenAI({

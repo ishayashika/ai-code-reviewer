@@ -9,7 +9,6 @@ import forgotPasswordRoutes from "./routes/forgotPasswordRoutes.js";
 
 dotenv.config();
 
-console.log("SERVER API KEY:", process.env.GEMINI_API_KEY);
 
 const app = express();//means create one express application
 

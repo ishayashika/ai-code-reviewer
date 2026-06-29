@@ -10,7 +10,6 @@ export const protect=async(req,res,next)=>{
                 message:"Not authorized, no token",
             });
         }
-        console.log(authHeader);
         const token=authHeader.split(" ")[1];//extract token
         const decoded=jwt.verify(token,process.env.JWT_SECRET);//verify jwt
         const user=await User.findById(decoded.id);
