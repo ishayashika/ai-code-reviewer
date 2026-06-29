@@ -155,6 +155,25 @@ GEMINI_API_KEY=
 
 ---
 
+## ⚠️ Note
+
+The **Forgot Password** feature works correctly in the local development environment.
+
+On the live deployment, OTP email delivery may not work because the free hosting environment (Render) has SMTP connectivity limitations with Gmail.
+
+All other features are fully functional, including:
+
+- ✅ User Registration
+- ✅ User Login
+- ✅ JWT Authentication
+- ✅ AI Code Review (Google Gemini)
+- ✅ Review History
+- ✅ Search
+- ✅ Pagination
+- ✅ Delete History
+- ✅ Markdown Rendering
+- ✅ Syntax Highlighting
+
 
 ## 👨‍💻 Author
 
