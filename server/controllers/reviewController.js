@@ -14,7 +14,7 @@ export const reviewCode=async (req,res)=>{
     }catch (error) {
          console.error("Gemini Error:", JSON.stringify(error, null, 2));
 
-        res.status(500).json({
+        res.stzatus(500).json({
             message: error.message,
             error: error,
         });
