@@ -3,7 +3,6 @@ import { sendEmail } from "../utils/sendEmail.js";
 import bcrypt from "bcryptjs";
 
 export const forgotPassword = async (req, res) => {
-    console.log("Forgot password controller called");
     try {
         const { email } = req.body;
         const user = await User.findOne({ email });

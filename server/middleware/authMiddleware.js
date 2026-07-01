@@ -2,7 +2,6 @@ import jwt from "jsonwebtoken";
 import User from "../models/User.js";
 export const protect=async(req,res,next)=>{
     try{
-
         const authHeader=req.headers.authorization;//read authorization header
         // if the client doesn't send any token
         if(!authHeader || !authHeader.startsWith("Bearer ")){
@@ -10,6 +9,7 @@ export const protect=async(req,res,next)=>{
                 message:"Not authorized, no token",
             });
         }
+        console.log(authHeader);
         const token=authHeader.split(" ")[1];//extract token
         const decoded=jwt.verify(token,process.env.JWT_SECRET);//verify jwt
         const user=await User.findById(decoded.id);
@@ -18,9 +18,7 @@ export const protect=async(req,res,next)=>{
                 message:"User not found",
             });
         }
-        
-        req.user=user;
-       
+        req.user = user;
         next();
     }catch(error){
         console.error(error);

@@ -1,4 +1,4 @@
-import api from "../config/axios";
+import api from "./api";
 
 export const reviewCode = async (code, language) => {
     const response = await api.post("/review", {

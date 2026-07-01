@@ -3,11 +3,15 @@ import bcrypt from "bcryptjs";//to hash the user's pass
 import jwt from "jsonwebtoken";
 // before storing in db
 
-export const registerUser=async(req,res)=>{
 
+//we use async here as db operation takes time like in api 
+// call, reading data, db query
+export const registerUser=async(req,res)=>{
     try{
         const{name,email,password}=req.body;
-        if(!name || !email || !password){
+        if(!name || !email || !password){//if all field's 
+            // data is not given by user then 400 status code
+            //  error will show
             return res.status(400).json({
                 message:"All fields are required"
             });
@@ -23,7 +27,7 @@ export const registerUser=async(req,res)=>{
 
         //10 is the salt rounds, higher the no., more secure
         const hashedPassword=await bcrypt.hash(password,10);
-        const user=await User.create({
+        const user=await User.create({//User.create() is a 
             name,
             email,
             password:hashedPassword,
@@ -47,6 +51,7 @@ export const registerUser=async(req,res)=>{
     
 
 }
+
 
 export const loginUser=async(req,res)=>{
     try{

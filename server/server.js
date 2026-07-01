@@ -7,11 +7,15 @@ import reviewRoutes from "./routes/reviewRoutes.js";
 import historyRoutes from "./routes/historyRoutes.js";
 import forgotPasswordRoutes from "./routes/forgotPasswordRoutes.js";
 
-dotenv.config();
+dotenv.config();//node.js can't read env variable automatically
 
-const app = express();
+console.log("SERVER API KEY:", process.env.GEMINI_API_KEY);
+
+const app = express();//means create one express application
+
 app.use(cors());
-app.use(express.json()); 
+app.use(express.json());//app.use is like installing feature 
+ 
 connectDB();
 
 app.use("/api/auth",authRoutes);//register the route
